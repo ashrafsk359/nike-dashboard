@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nike Products Dashboard
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a simple web dashboard built using Next.js and Supabase.
+
+The application fetches Nike product data from a Supabase database and displays it in a clean tabular format with search and refresh functionality.
+
+---
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- Tailwind CSS
+
+### Backend / Database
+- Supabase
+
+### Deployment
+- Vercel
+
+---
+
+## Features
+
+- Display Nike product data in a table
+- Fetch data directly from Supabase
+- Product search functionality
+- Refresh button to reload table data
+- Responsive UI
+- Live deployed application
+
+---
+
+## Database Fields
+
+The dashboard displays:
+
+- Product Image
+- Product Name
+- Product Description
+- Discount Price
+- Review Count
+- Product Tagging
+
+---
+
+## Project Structure
+
+```bash
+├── app/
+├── lib/
+│   └── supabase.js
+├── public/
+├── package.json
+├── README.md
+└── next.config.js
+```
+
+---
+
+## Setup Instructions
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+Create the following variables in Vercel or `.env.local`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Live Application
+Add your Vercel deployment link here.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### GitHub Repository
+Add your GitHub repository link here.
+
+---
+
+## Notes
+
+- Product data is stored in Supabase.
+- The dashboard fetches data dynamically from the database.
+- Search functionality filters products in real time.
+
+---
+
+## Author
+
+Ashraf Sulthan
